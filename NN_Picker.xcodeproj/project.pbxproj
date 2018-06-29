@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E04582E20E6076E00726211 /* NN_PICKER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E04582420E6076E00726211 /* NN_PICKER.framework */; };
+		3E04583320E6076E00726211 /* nn_pickersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E04583220E6076E00726211 /* nn_pickersTests.swift */; };
+		3E04583520E6076E00726211 /* nn_pickers.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E04582720E6076E00726211 /* nn_pickers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EECED2520E607DD0003532E /* DisplayModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EECED2420E607DD0003532E /* DisplayModule.swift */; };
+		3EECED2820E608400003532E /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EECED2720E608400003532E /* UIViewExtensions.swift */; };
+		3EECED2B20E60AFE0003532E /* StageModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EECED2A20E60AFE0003532E /* StageModule.swift */; };
+		3EECED3320E6127E0003532E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EECED3220E6127E0003532E /* AppDelegate.swift */; };
+		3EECED3A20E6127F0003532E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EECED3920E6127F0003532E /* Assets.xcassets */; };
+		3EECED3D20E6127F0003532E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EECED3B20E6127F0003532E /* LaunchScreen.storyboard */; };
+		3EECED4920E613010003532E /* TempuraScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EECED4320E613010003532E /* TempuraScenePresenter.swift */; };
+		3EECED4A20E613010003532E /* TempuraSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EECED4420E613010003532E /* TempuraSceneRouter.swift */; };
+		3EECED4B20E613010003532E /* TempuraSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EECED4520E613010003532E /* TempuraSceneViewController.swift */; };
+		3EECED4C20E613010003532E /* TempuraSceneProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EECED4620E613010003532E /* TempuraSceneProtocols.swift */; };
+		3EECED4D20E613010003532E /* TempuraSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EECED4720E613010003532E /* TempuraSceneInteractor.swift */; };
+		8EF36DD9DC5CAB440D0B316D /* Pods_nn_pickersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5213B3FD040175BE33A6E415 /* Pods_nn_pickersTests.framework */; };
+		E69C6296CC76048C852D25BA /* Pods_nn_pickers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBB6EF0B091C7E7F1B7CD46 /* Pods_nn_pickers.framework */; };
+		F1D1B1B840966B7FC2134C84 /* Pods_nn_pickers_nn_picker_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9447C621676CFA07F7C61293 /* Pods_nn_pickers_nn_picker_app.framework */; };
+		F6059920422AD0F7C76D7FD5 /* Pods_nn_pickers_nn_pickersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6612AB13DE651906843E99D /* Pods_nn_pickers_nn_pickersTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E04582F20E6076E00726211 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E04581B20E6076E00726211 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E04582320E6076E00726211;
+			remoteInfo = nn_pickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		083D45E59EFBD70EC6392923 /* Pods-nn_pickers-nn_picker_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nn_pickers-nn_picker_app.release.xcconfig"; path = "Pods/Target Support Files/Pods-nn_pickers-nn_picker_app/Pods-nn_pickers-nn_picker_app.release.xcconfig"; sourceTree = "<group>"; };
+		2D315892B91924D74A15E733 /* Pods-nn_pickers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nn_pickers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nn_pickers/Pods-nn_pickers.debug.xcconfig"; sourceTree = "<group>"; };
+		3E04582420E6076E00726211 /* NN_PICKER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NN_PICKER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E04582720E6076E00726211 /* nn_pickers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nn_pickers.h; sourceTree = "<group>"; };
+		3E04582820E6076E00726211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E04582D20E6076E00726211 /* NN_PICKERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NN_PICKERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E04583220E6076E00726211 /* nn_pickersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nn_pickersTests.swift; sourceTree = "<group>"; };
+		3E04583420E6076E00726211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EECED2420E607DD0003532E /* DisplayModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayModule.swift; sourceTree = "<group>"; };
+		3EECED2720E608400003532E /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		3EECED2A20E60AFE0003532E /* StageModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageModule.swift; sourceTree = "<group>"; };
+		3EECED3020E6127E0003532E /* nn_picker_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nn_picker_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EECED3220E6127E0003532E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EECED3920E6127F0003532E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EECED3C20E6127F0003532E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EECED3E20E6127F0003532E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EECED4320E613010003532E /* TempuraScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempuraScenePresenter.swift; sourceTree = "<group>"; };
+		3EECED4420E613010003532E /* TempuraSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempuraSceneRouter.swift; sourceTree = "<group>"; };
+		3EECED4520E613010003532E /* TempuraSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempuraSceneViewController.swift; sourceTree = "<group>"; };
+		3EECED4620E613010003532E /* TempuraSceneProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempuraSceneProtocols.swift; sourceTree = "<group>"; };
+		3EECED4720E613010003532E /* TempuraSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempuraSceneInteractor.swift; sourceTree = "<group>"; };
+		5213B3FD040175BE33A6E415 /* Pods_nn_pickersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nn_pickersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D9FBB351DF58C370A14574 /* Pods-nn_pickers-nn_pickersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nn_pickers-nn_pickersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nn_pickers-nn_pickersTests/Pods-nn_pickers-nn_pickersTests.release.xcconfig"; sourceTree = "<group>"; };
+		66A464CCF6DE8DC038ECAEAF /* Pods-nn_pickersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nn_pickersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nn_pickersTests/Pods-nn_pickersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C3CC6325C34DD23106E881F /* Pods-nn_pickers-nn_pickersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nn_pickers-nn_pickersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nn_pickers-nn_pickersTests/Pods-nn_pickers-nn_pickersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7499492FF023B69B74EDF473 /* Pods-nn_pickers-nn_picker_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nn_pickers-nn_picker_app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nn_pickers-nn_picker_app/Pods-nn_pickers-nn_picker_app.debug.xcconfig"; sourceTree = "<group>"; };
+		9447C621676CFA07F7C61293 /* Pods_nn_pickers_nn_picker_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nn_pickers_nn_picker_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A040D6D8CFC8661077AFDCAF /* Pods-nn_pickersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nn_pickersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nn_pickersTests/Pods-nn_pickersTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4C08D0F2208E8D6266681E0 /* Pods-nn_pickers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nn_pickers.release.xcconfig"; path = "Pods/Target Support Files/Pods-nn_pickers/Pods-nn_pickers.release.xcconfig"; sourceTree = "<group>"; };
+		DCBB6EF0B091C7E7F1B7CD46 /* Pods_nn_pickers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nn_pickers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6612AB13DE651906843E99D /* Pods_nn_pickers_nn_pickersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nn_pickers_nn_pickersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E04582020E6076E00726211 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69C6296CC76048C852D25BA /* Pods_nn_pickers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E04582A20E6076E00726211 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E04582E20E6076E00726211 /* NN_PICKER.framework in Frameworks */,
+				8EF36DD9DC5CAB440D0B316D /* Pods_nn_pickersTests.framework in Frameworks */,
+				F6059920422AD0F7C76D7FD5 /* Pods_nn_pickers_nn_pickersTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EECED2D20E6127E0003532E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D1B1B840966B7FC2134C84 /* Pods_nn_pickers_nn_picker_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17BB3F55923715BD73E7DD50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCBB6EF0B091C7E7F1B7CD46 /* Pods_nn_pickers.framework */,
+				5213B3FD040175BE33A6E415 /* Pods_nn_pickersTests.framework */,
+				F6612AB13DE651906843E99D /* Pods_nn_pickers_nn_pickersTests.framework */,
+				9447C621676CFA07F7C61293 /* Pods_nn_pickers_nn_picker_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E04581A20E6076E00726211 = {
+			isa = PBXGroup;
+			children = (
+				3E04582620E6076E00726211 /* nn_pickers */,
+				3E04583120E6076E00726211 /* nn_pickersTests */,
+				3EECED3120E6127E0003532E /* nn_picker_app */,
+				3E04582520E6076E00726211 /* Products */,
+				980430464DB202B88E4EE84F /* Pods */,
+				17BB3F55923715BD73E7DD50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3E04582520E6076E00726211 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E04582420E6076E00726211 /* NN_PICKER.framework */,
+				3E04582D20E6076E00726211 /* NN_PICKERTests.xctest */,
+				3EECED3020E6127E0003532E /* nn_picker_app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E04582620E6076E00726211 /* nn_pickers */ = {
+			isa = PBXGroup;
+			children = (
+				3E04582720E6076E00726211 /* nn_pickers.h */,
+				3E04582820E6076E00726211 /* Info.plist */,
+				3EECED2420E607DD0003532E /* DisplayModule.swift */,
+				3EECED2A20E60AFE0003532E /* StageModule.swift */,
+				3EECED2620E6082A0003532E /* ExtensionHooks */,
+			);
+			path = nn_pickers;
+			sourceTree = "<group>";
+		};
+		3E04583120E6076E00726211 /* nn_pickersTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E04583220E6076E00726211 /* nn_pickersTests.swift */,
+				3E04583420E6076E00726211 /* Info.plist */,
+			);
+			path = nn_pickersTests;
+			sourceTree = "<group>";
+		};
+		3EECED2620E6082A0003532E /* ExtensionHooks */ = {
+			isa = PBXGroup;
+			children = (
+				3EECED2720E608400003532E /* UIViewExtensions.swift */,
+			);
+			path = ExtensionHooks;
+			sourceTree = "<group>";
+		};
+		3EECED3120E6127E0003532E /* nn_picker_app */ = {
+			isa = PBXGroup;
+			children = (
+				3EECED4220E612E70003532E /* TempuraScene */,
+				3EECED3220E6127E0003532E /* AppDelegate.swift */,
+				3EECED3920E6127F0003532E /* Assets.xcassets */,
+				3EECED3B20E6127F0003532E /* LaunchScreen.storyboard */,
+				3EECED3E20E6127F0003532E /* Info.plist */,
+			);
+			path = nn_picker_app;
+			sourceTree = "<group>";
+		};
+		3EECED4220E612E70003532E /* TempuraScene */ = {
+			isa = PBXGroup;
+			children = (
+				3EECED4320E613010003532E /* TempuraScenePresenter.swift */,
+				3EECED4420E613010003532E /* TempuraSceneRouter.swift */,
+				3EECED4520E613010003532E /* TempuraSceneViewController.swift */,
+				3EECED4620E613010003532E /* TempuraSceneProtocols.swift */,
+				3EECED4720E613010003532E /* TempuraSceneInteractor.swift */,
+			);
+			path = TempuraScene;
+			sourceTree = "<group>";
+		};
+		980430464DB202B88E4EE84F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D315892B91924D74A15E733 /* Pods-nn_pickers.debug.xcconfig */,
+				A4C08D0F2208E8D6266681E0 /* Pods-nn_pickers.release.xcconfig */,
+				66A464CCF6DE8DC038ECAEAF /* Pods-nn_pickersTests.debug.xcconfig */,
+				A040D6D8CFC8661077AFDCAF /* Pods-nn_pickersTests.release.xcconfig */,
+				6C3CC6325C34DD23106E881F /* Pods-nn_pickers-nn_pickersTests.debug.xcconfig */,
+				59D9FBB351DF58C370A14574 /* Pods-nn_pickers-nn_pickersTests.release.xcconfig */,
+				7499492FF023B69B74EDF473 /* Pods-nn_pickers-nn_picker_app.debug.xcconfig */,
+				083D45E59EFBD70EC6392923 /* Pods-nn_pickers-nn_picker_app.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3E04582120E6076E00726211 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E04583520E6076E00726211 /* nn_pickers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3E04582320E6076E00726211 /* NN_PICKER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E04583820E6076E00726211 /* Build configuration list for PBXNativeTarget "NN_PICKER" */;
+			buildPhases = (
+				D96303B0DDAFB9B1DCE0683C /* [CP] Check Pods Manifest.lock */,
+				3E04581F20E6076E00726211 /* Sources */,
+				3E04582020E6076E00726211 /* Frameworks */,
+				3E04582120E6076E00726211 /* Headers */,
+				3E04582220E6076E00726211 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NN_PICKER;
+			productName = nn_pickers;
+			productReference = 3E04582420E6076E00726211 /* NN_PICKER.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3E04582C20E6076E00726211 /* NN_PICKERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E04583B20E6076E00726211 /* Build configuration list for PBXNativeTarget "NN_PICKERTests" */;
+			buildPhases = (
+				A0C63BE7F0EB020B6114986E /* [CP] Check Pods Manifest.lock */,
+				3E04582920E6076E00726211 /* Sources */,
+				3E04582A20E6076E00726211 /* Frameworks */,
+				3E04582B20E6076E00726211 /* Resources */,
+				30FE44A764A2531443686C49 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E04583020E6076E00726211 /* PBXTargetDependency */,
+			);
+			name = NN_PICKERTests;
+			productName = nn_pickersTests;
+			productReference = 3E04582D20E6076E00726211 /* NN_PICKERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3EECED2F20E6127E0003532E /* nn_picker_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EECED4120E6127F0003532E /* Build configuration list for PBXNativeTarget "nn_picker_app" */;
+			buildPhases = (
+				19B3EB0404DCF3DC1F75CC8F /* [CP] Check Pods Manifest.lock */,
+				3EECED2C20E6127E0003532E /* Sources */,
+				3EECED2D20E6127E0003532E /* Frameworks */,
+				3EECED2E20E6127E0003532E /* Resources */,
+				A8AB0A8CDBBB288E3F24796C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nn_picker_app;
+			productName = nn_picker_app;
+			productReference = 3EECED3020E6127E0003532E /* nn_picker_app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E04581B20E6076E00726211 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = app_modules;
+				TargetAttributes = {
+					3E04582320E6076E00726211 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+					3E04582C20E6076E00726211 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					3EECED2F20E6127E0003532E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 3E04581E20E6076E00726211 /* Build configuration list for PBXProject "NN_Picker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E04581A20E6076E00726211;
+			productRefGroup = 3E04582520E6076E00726211 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E04582320E6076E00726211 /* NN_PICKER */,
+				3EECED2F20E6127E0003532E /* nn_picker_app */,
+				3E04582C20E6076E00726211 /* NN_PICKERTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E04582220E6076E00726211 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E04582B20E6076E00726211 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EECED2E20E6127E0003532E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EECED3D20E6127F0003532E /* LaunchScreen.storyboard in Resources */,
+				3EECED3A20E6127F0003532E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19B3EB0404DCF3DC1F75CC8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nn_pickers-nn_picker_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30FE44A764A2531443686C49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-nn_pickers-nn_pickersTests/Pods-nn_pickers-nn_pickersTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nn_pickers-nn_pickersTests/Pods-nn_pickers-nn_pickersTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0C63BE7F0EB020B6114986E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nn_pickers-nn_pickersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8AB0A8CDBBB288E3F24796C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-nn_pickers-nn_picker_app/Pods-nn_pickers-nn_picker_app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nn_pickers-nn_picker_app/Pods-nn_pickers-nn_picker_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D96303B0DDAFB9B1DCE0683C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nn_pickers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E04581F20E6076E00726211 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EECED2820E608400003532E /* UIViewExtensions.swift in Sources */,
+				3EECED2B20E60AFE0003532E /* StageModule.swift in Sources */,
+				3EECED2520E607DD0003532E /* DisplayModule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E04582920E6076E00726211 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E04583320E6076E00726211 /* nn_pickersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EECED2C20E6127E0003532E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EECED4B20E613010003532E /* TempuraSceneViewController.swift in Sources */,
+				3EECED4A20E613010003532E /* TempuraSceneRouter.swift in Sources */,
+				3EECED4D20E613010003532E /* TempuraSceneInteractor.swift in Sources */,
+				3EECED4C20E613010003532E /* TempuraSceneProtocols.swift in Sources */,
+				3EECED4920E613010003532E /* TempuraScenePresenter.swift in Sources */,
+				3EECED3320E6127E0003532E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E04583020E6076E00726211 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E04582320E6076E00726211 /* NN_PICKER */;
+			targetProxy = 3E04582F20E6076E00726211 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3EECED3B20E6127F0003532E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EECED3C20E6127F0003532E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E04583620E6076E00726211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3E04583720E6076E00726211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3E04583920E6076E00726211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D315892B91924D74A15E733 /* Pods-nn_pickers.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9J5NKKT78R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = nn_pickers/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.khoatrandang.modules.nn-pickers";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E04583A20E6076E00726211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4C08D0F2208E8D6266681E0 /* Pods-nn_pickers.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9J5NKKT78R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = nn_pickers/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.khoatrandang.modules.nn-pickers";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E04583C20E6076E00726211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C3CC6325C34DD23106E881F /* Pods-nn_pickers-nn_pickersTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9J5NKKT78R;
+				INFOPLIST_FILE = nn_pickersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.m3dicine.modules.nn-pickersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E04583D20E6076E00726211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59D9FBB351DF58C370A14574 /* Pods-nn_pickers-nn_pickersTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9J5NKKT78R;
+				INFOPLIST_FILE = nn_pickersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.m3dicine.modules.nn-pickersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3EECED3F20E6127F0003532E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7499492FF023B69B74EDF473 /* Pods-nn_pickers-nn_picker_app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9J5NKKT78R;
+				INFOPLIST_FILE = nn_picker_app/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.khoatrandang.modules.nn-picker-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EECED4020E6127F0003532E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 083D45E59EFBD70EC6392923 /* Pods-nn_pickers-nn_picker_app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9J5NKKT78R;
+				INFOPLIST_FILE = nn_picker_app/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.khoatrandang.modules.nn-picker-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E04581E20E6076E00726211 /* Build configuration list for PBXProject "NN_Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E04583620E6076E00726211 /* Debug */,
+				3E04583720E6076E00726211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E04583820E6076E00726211 /* Build configuration list for PBXNativeTarget "NN_PICKER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E04583920E6076E00726211 /* Debug */,
+				3E04583A20E6076E00726211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E04583B20E6076E00726211 /* Build configuration list for PBXNativeTarget "NN_PICKERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E04583C20E6076E00726211 /* Debug */,
+				3E04583D20E6076E00726211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EECED4120E6127F0003532E /* Build configuration list for PBXNativeTarget "nn_picker_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EECED3F20E6127F0003532E /* Debug */,
+				3EECED4020E6127F0003532E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E04581B20E6076E00726211 /* Project object */;
+}
