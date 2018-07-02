@@ -10,6 +10,7 @@
 
 import UIKit
 import SnapKit
+import NN_PICKER
 class TempuraSceneViewController: UIViewController, TempuraSceneViewProtocol {
 
 	var presenter: TempuraScenePresenterProtocol?
@@ -21,16 +22,24 @@ class TempuraSceneViewController: UIViewController, TempuraSceneViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        let btn = UIButton()
-        btn.setTitle("hello", for: .normal)
-        view.addSubview(btn)
-        btn.addTarget(self, action: #selector(btnTapped), for: UIControlEvents.touchUpInside)
+        
+        let text = UITextField()
+        view.addSubview(text)
+        text.placeholder = "hey"
+        text.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview().dividedBy(3)
+            make.width.equalToSuperview().offset(-30)
+            make.height.equalTo(50)
+        }
+        text.inputView = DisplayModule()        
     }
     
     
     
     @objc func btnTapped(){
-        
+        let prompt = DisplayModule()
+        prompt.show(animated: true)
     }
     
     

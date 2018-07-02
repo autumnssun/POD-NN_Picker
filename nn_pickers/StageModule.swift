@@ -7,18 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
-
-protocol ModuleProtocol: StageProtocol{
+public protocol ModuleProtocol: StageProtocol{
     var _action:Selector? {get set}
     var _target:UIResponder? {get set}
     
     func show(animated:Bool)
     func dismiss(animated:Bool)
-    func didTappedOnBackgroundView()
+    func didTapOnBackdrop()
     
 }
-protocol StageProtocol {
+public protocol StageProtocol {
     var stage:UIView{get set}
     var backDrop:UIView {get}
     

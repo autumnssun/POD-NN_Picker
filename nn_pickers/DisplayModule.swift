@@ -8,18 +8,19 @@
 import UIKit
 import Foundation
 import SnapKit
-class DisplayModule: UIView, ModuleProtocol {
-    var backDrop: UIView = UIView()
-    var stage: UIView = UIView()
-    var _action:Selector?
-    var _target:UIResponder?
+
+public class DisplayModule: UIView, ModuleProtocol {
+    public var backDrop: UIView = UIView()
+    public var stage: UIView = UIView()
+    public var _action:Selector?
+    public var _target:UIResponder?
     override init(frame: CGRect) {
-        super.init(frame: frame)
+        super.init(frame: UIScreen.main.bounds)
         setUpBackDrop()
         setUpStage()
     }
     
-    func setUpStage(){
+    public func setUpStage(){
         addSubview(stage)
         stage.backgroundColor = UIColor.white
         stage.snp.makeConstraints { (make) in
@@ -30,17 +31,19 @@ class DisplayModule: UIView, ModuleProtocol {
         }
     }
     
-    func setUpBackDrop(){
+    public func setUpBackDrop(){
         addSubview(backDrop)
         backDrop.backgroundColor = UIColor.black
         backDrop.snp.makeConstraints { (make) in
             make.size.equalToSuperview()
             make.center.equalToSuperview()
         }
+        backDrop.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnBackdrop)))
     }
+    
 
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     func hide(){
@@ -55,7 +58,7 @@ class DisplayModule: UIView, ModuleProtocol {
         dismiss(animated: true)
     }
     
-    @objc func didTappedOnBackgroundView(){
+    @objc public func didTapOnBackdrop(){
         dismiss()
     }
     

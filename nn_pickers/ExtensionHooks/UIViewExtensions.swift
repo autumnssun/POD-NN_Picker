@@ -23,7 +23,7 @@ extension UIView{
 }
 
 extension ModuleProtocol where Self:UIView{
-    func show(animated:Bool){
+    public func show(animated:Bool){
         self.backDrop.alpha = 0
         self.stage.center = CGPoint(x: self.center.x, y: self.frame.height + self.stage.frame.height/2)
         if let topvc = topViewController{
@@ -44,7 +44,7 @@ extension ModuleProtocol where Self:UIView{
         }
     }
     
-    func dismiss(animated:Bool){
+    public func dismiss(animated:Bool){
         if animated {
             UIView.animate(withDuration: 0.33, animations: {
                 self.backDrop.alpha = 0
